@@ -14,7 +14,7 @@ postRoute.delete('/delete_post/:postId' , verification , deletePost);
 postRoute.get('/search' , verification , searchForPost);
 postRoute.get('/tags' , verification , getTaggedPosts);
 postRoute.patch('/add_tags/:postId' , verification , addtags);
-postRoute.patch('/remove_tags/postId' , verification , removetags);
+postRoute.patch('/remove_tags/:postId' , verification , removetags);
 
 // for admin
 postRoute.delete('/delete/post/:postId' , verification , isAdmin , deletePost);
